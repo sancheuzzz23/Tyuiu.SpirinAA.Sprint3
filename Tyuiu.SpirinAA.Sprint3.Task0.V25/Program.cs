@@ -32,7 +32,7 @@ namespace Tyuiu.SpirinAA.Sprint3.Task0.V25
             int value = 5;
             int startValue = 1, stopValue = 14;
             Console.WriteLine("Переменная X = " + value);
-            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Старт шага = " + startValue); 
             Console.WriteLine("Конец шага = " + stopValue);
 
 
