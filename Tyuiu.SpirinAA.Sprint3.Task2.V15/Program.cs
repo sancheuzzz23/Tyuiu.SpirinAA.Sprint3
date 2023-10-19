@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.SpirinAA.Sprint3.Task1.V1.Lib;
+using Tyuiu.SpirinAA.Sprint3.Task2.V15.Lib;
 
-namespace Tyuiu.SpirinAA.Sprint3.Task1.V1
+namespace Tyuiu.SpirinAA.Sprint3.Task2.V15
 {
     internal class Program
     {
@@ -17,20 +17,22 @@ namespace Tyuiu.SpirinAA.Sprint3.Task1.V1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Операции сравнения                                                *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #1                                                              *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнил: Спирин Александр Алексеевич | АСОиУб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл while, которая вычисляет произведение *");
-            Console.WriteLine("* ряда по формуле                                                         *");
+            Console.WriteLine("* Написать программу используя цикл do...while, которая вычисляет сумму   *");
+            Console.WriteLine("* ряда по формуле, при a = 0,5                                            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
+            double value = 0.5;
             int startValue = 1;
             int stopValue = 7;
+            Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
 
@@ -39,7 +41,7 @@ namespace Tyuiu.SpirinAA.Sprint3.Task1.V1
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write($"Произведение ряда = {dataService.GetMultiplySeries(startValue, stopValue)}");
+            Console.Write($"Сумма ряда = {dataService.GetMultiplySeries(startValue, stopValue)}");
 
             Console.ReadKey();
         }
