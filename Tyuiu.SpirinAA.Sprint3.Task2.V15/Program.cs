@@ -31,7 +31,7 @@ namespace Tyuiu.SpirinAA.Sprint3.Task2.V15
 
             double value = 0.5;
             int startValue = 1;
-            int stopValue = 7;
+            int stopValue = 20;
             Console.WriteLine("Переменная X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
@@ -41,7 +41,7 @@ namespace Tyuiu.SpirinAA.Sprint3.Task2.V15
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.Write($"Сумма ряда = {dataService.GetMultiplySeries(startValue, stopValue)}");
+            Console.Write($"Сумма ряда = {dataService.GetSumSeries(value, startValue, stopValue)}");
 
             Console.ReadKey();
         }
